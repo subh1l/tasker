@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import os
 import sys
 import datetime
@@ -88,7 +86,7 @@ def delete(id):
         print("No such file is found.")
 
 def mark(id, stat):
-    stat = stat[0].lower()
+    stat = stat[1].lower()
     current_data = load()
 
     for task in current_data:
@@ -131,20 +129,5 @@ def task_list(status):
             else:
                 continue
 
-        print(f"| {str(index).center(3):3} | {desc:30} | {stat:11} | {created:16} | {updated:16} |")
+        print(f"| {str(index).center(3):3} | {desc:.30} | {stat:11} | {created:16} | {updated:16} |")
     print("="*92)
-
-#driver
-
-initiate_db()
-
-option = sys.argv[1].split("-")
-
-match option[0]:
-    case "add": add(sys.argv[2])
-    case "update": update(int(sys.argv[2]), sys.argv[3])
-    case "mark": mark(int(sys.argv[2]), sys.argv[3].split("-"))
-    case "delete": delete(int(sys.argv[2]))
-    case "list": task_list(get_status())
-    case _: print("invalid command.")
-    
