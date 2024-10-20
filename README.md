@@ -1,4 +1,4 @@
-o# Tasker: CLI Task Tracker App
+# Tasker: CLI Task Tracker App
 Tasker is a task tracker application based on command-line interface. This application allows users to add, delete, update, and list tasks using various commands. It provides a straightforward way to interact with a task database using a simple CLI interface, making it an ideal tool for both personal and professional task tracking.
 
 ## Features
