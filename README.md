@@ -22,7 +22,7 @@ Tasker have various function to help users track and manage their task:
 
       1.  Adding task: `./tasker.py add "task description"`
            - Example: `/tasker.py add "wash the dishes."`   
-           - Output: New task with correspoding ID added to the list.
+           - Output: New task with correspoding description added to the list.
 
       2. Updating task: `./tasker.py update task_ID "new task description"`
          - Example: `./tasker.py update 1 "wash the dishes and cook dinner."`
