@@ -41,8 +41,7 @@ Tasker have various function to help users track and manage their task:
             *Valid command: "todo", "in-progress", "done", or leave it empty to show all task
             Example: 
             - `./tasker.py list`
-            - `./tasker.py list todo`
-            Output:
+            - `./tasker.py list todo`  Output:
             - List all task in database
             - List all task with status todo in database.
             
