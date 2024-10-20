@@ -14,36 +14,37 @@ Tasker have various function to help users track and manage their task:
     To install the application clone the git repository using `git clone https://github.com/subh1l/tasker.git`
 
 2. Usage
-    1. Open your terminal.
+    - Open your terminal.
 
-    2. Go to the directory where the main file is.
+    - Go to the directory where the main file is.
 
-    3. run the project.
+    - run the project.
 
-        - Adding task: `./tasker.py add "task description"`
-            Example: `/tasker.py add "wash the dishes."`   
-            Output: New task with correspoding ID added to the list.
+      1.  Adding task: `./tasker.py add "task description"`
+           - Example: `/tasker.py add "wash the dishes."`   
+           - Output: New task with correspoding ID added to the list.
 
-        - Updating task: `./tasker.py update task_ID "new task description"`
-            Example: `./tasker.py update 1 "wash the dishes and cook dinner."`
-            Output: Description of task with correspoding ID will change to the new description.
+      2. Updating task: `./tasker.py update task_ID "new task description"`
+         - Example: `./tasker.py update 1 "wash the dishes and cook dinner."`
+         - Output: Description of task with correspoding ID will change to the new description.
 
-        - Marking task: `./tasker.py mark* (task ID)`
-            *Valid argument: "-done" or "-in-progress"
-            Example: `./tasker.py mark-done 1"`
-            Output: Status of task with corresponding ID will change to the new status.
+      3. Marking task: `./tasker.py mark* (task ID)`
+         - *Valid argument: "-done" or "-in-progress"
+         - Example: `./tasker.py mark-done 1"`
+         - Output: Status of task with corresponding ID will change to the new status.
 
-        - Deleting task: `./tasker.py delete (task ID)`
-            Example: `./tasker.py delete 1`
-            Output: Task with corresponding ID is deleted.
+      4. Deleting task: `./tasker.py delete (task ID)`
+         - Example: `./tasker.py delete 1`
+         - Output: Task with corresponding ID is deleted.
         
-        - Listing task: `./tasker.py list *"`
-            *Valid command: "todo", "in-progress", "done", or leave it empty to show all task
-            Example: 
-            - `./tasker.py list`
-            - `./tasker.py list todo`  Output:
-            - List all task in database
-            - List all task with status todo in database.
+      5. Listing task: `./tasker.py list *"`
+         - *Valid command: "todo", "in-progress", "done", or leave it empty to show all task
+         - Example: 
+               1. `./tasker.py list`
+               2. `./tasker.py list todo`
+           - Output:
+              1. List all task in database
+              2. List all task with status todo in database.
             
         
 ## Project Link
